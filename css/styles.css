@@ -1,0 +1,16 @@
+
+*, *:before, *:after {
+	margin: 0; padding: 0; box-sizing: border-box; -moz-box-sizing: border-box;
+}
+html {
+	height: 100%; width: 100%; font-family: 'Open Sans', sans-serif; background: #F7F7F7;
+}
+body {
+	height: 100%;
+}
+ul {
+	list-style: none;
+}
+h3 {
+	font-size: 15px; font-style: italic;
+}
