@@ -1,9 +1,16 @@
 
+/**************************
+/
+/	DEFAULT
+/
+/**************************/
+
 *, *:before, *:after {
 	margin: 0; padding: 0; box-sizing: border-box; -moz-box-sizing: border-box;
 }
 html {
-	height: 100%; width: 100%; font-family: 'Open Sans', sans-serif; background: #F7F7F7;
+	height: 100%; width: 100%; font-family: 'Open Sans', sans-serif; background: #D8D8D8; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
 }
 body {
 	height: 100%;
@@ -11,6 +18,14 @@ body {
 ul {
 	list-style: none;
 }
+h1, h2, h3, h4 {
+	font-weight: 300;
+}
+h2 {
+	font-size: 25px;
+}
 h3 {
-	font-size: 15px; font-style: italic;
+	font-size: 18px;
+    font-style: italic;
+    color: #565656;
 }
