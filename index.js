@@ -7,6 +7,11 @@ var app = express();
     res.sendfile('views/index.html')
  });
 
+  /* serves about page */
+ app.get("/about", function(req, res) {
+    res.sendfile('views/about.html')
+ });
+
  /* serves all the static files */
  app.get(/^(.+)$/, function(req, res){ 
      console.log('static file request : ' + req.params);
