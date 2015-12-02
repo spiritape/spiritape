@@ -9,29 +9,20 @@
 <link rel="stylesheet" href="css/styles.css">
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 <style>
 
-
-.container {
-	position: relative; height: 100%; padding-top: 70px; /*background: blue;*/
-}
-
-.content {
-	position: absolute; top: 0; left: 250px; width: calc(100% - 250px); height: 100%; padding: 30px 15px;
-}
 
 .project-item {
 	width: 50%; padding: 15px; float: left;
 }
 .project-item img {
-	width: 100%; margin-top: 10px;
+	width: 100%; margin-top: 10px; border: 3px solid #373738; transition: all 0.3s ease-out; position: relative;
 }
-
-.sidebar {
-	position: fixed; top: 0; left 0; height: 100%; width: 250px; background: white;box-shadow: 2px 0px 1px 0px rgba(0, 0, 0, 0.08);
- }
+.project-item img:hover {
+	cursor: pointer; cursor: hand; transform: scale(1.03);
+}
 .logo-wrap {
 	width: 100%; padding: 30px;
 }
@@ -39,13 +30,13 @@
 	width: 100%;
 }
 .logo-wrap span {
-	display: block; text-align: center; font-style: italic; font-size: 12px; margin-top: -8px; color: #A4D0F1;
+	display: block; text-align: center; font-style: italic; font-size: 12px; margin-top: -5px; color: #7BB9E6;
 }
 .sidebar li {
-	padding: 7px 20px; color: #323232; font-size: 16px; background: #FFF; transition: all 0.3s ease-out;
+	padding: 7px 20px; color: #FFF; font-size: 16px;  transition: all 0.1s ease-out; border-top: 1px solid rgba(0, 0, 0, 0); border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 .sidebar li:hover {
-	cursor: pointer; cursor: hand; background: #E9F3FF;
+	cursor: pointer; cursor: hand; background: #16171F; border-top: 1px solid black; border-bottom: 1px solid #383838;
 }
 
 </style>
@@ -56,30 +47,17 @@
 <!-- Main Container -->
 <div class="container">
 
-	<!-- Sidebar -->
-	<div class="sidebar">
-		<div class="logo-wrap">
-			<img src="images/logo3.jpg">
-			<span>Crowd Equity for Film</span>
-		</div>
-		<ul>
-			<li>Project Slate</li>
-			<li>Manage Investment</li>
-			<li>Learn About Crowd Equity</li>
-			<li>Bidding</li>
-			<li>Earnings</li>
-			<br>
-			<hr>
-			<br>
-			<li>Portfolio</li>
-			<li>Past Projects</li>
-			<li>About</li>
-		</ul>
-	</div>
-
-
 	<!-- Content -->
-	<div class="content">
+	<div class="content scroll">
+
+		<div class="content-header">
+			<h1>Featured Projects</h1>
+			<ul class="inline">
+				<li>Option 1</li>
+				<li>Option 2</li>
+			</ul>
+			<line></line>
+		</div>
 
 		<div class="project-item">
 			<h2>A Separate Peace</h2>
@@ -101,11 +79,37 @@
 
 		<div class="project-item">
 			<h2>Super Heady</h2>
-			<h3>Micah Van Hove, Jacob King</h3>
+			<h3>Directed by Micah Van Hove & Jacob King</h3>
 			<img src="images/pic4.jpg">
 		</div>
 
 	</div>
+
+	<!-- Sidebar -->
+	<div class="sidebar">
+		<div class="logo-wrap">
+			<img src="images/logo4.png">
+			<span>Crowd Equity for Film</span>
+		</div>
+		<ul>
+			<li>Project Slate</li>
+			<li>Manage Investment</li>
+			<li>Learn About Crowd Equity</li>
+			<li>Bidding</li>
+			<li>Earnings</li>
+			<darkline></darkline>
+			<li>Portfolio</li>
+			<li>Past Projects</li>
+			<li>About</li>
+		</ul>
+	</div>
+
+
+
+
+		
+
+
 
 </div>
 

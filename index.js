@@ -15,7 +15,7 @@ var app = express();
  /* serves all the static files */
  app.get(/^(.+)$/, function(req, res){ 
      console.log('static file request : ' + req.params);
-     res.sendfile( __dirname + req.params[0]); 
+     res.sendfile( __dirname + '/public/' + req.params[0]); 
  });
  
  var port = process.env.PORT || 5000;
